@@ -1,0 +1,567 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Sensores prótesis"
+Date "2023-11-18"
+Rev "V1"
+Comp "Protos UN"
+Comment1 "Diseño de PCB para circuito de prótesis"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A1
+U 1 1 65597B55
+P 5950 4050
+F 0 "A1" H 5950 2961 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 5950 2870 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 5950 4050 50  0001 C CIN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 5950 4050 50  0001 C CNN
+	1    5950 4050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 74xx:CD74HC4067M U1
+U 1 1 6559D535
+P 8550 4000
+F 0 "U1" H 8550 5181 50  0000 C CNN
+F 1 "CD74HC4067M" H 8550 5090 50  0000 C CNN
+F 2 "Package_DIP:DIP-24_W15.24mm_LongPads" H 9450 3000 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74hc4067.pdf" H 8200 4850 50  0001 C CNN
+	1    8550 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT_TRIM RV1
+U 1 1 655A24F5
+P 3700 5300
+F 0 "RV1" H 3630 5346 50  0000 R CNN
+F 1 "R_POT_TRIM" H 3630 5255 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 3700 5300 50  0001 C CNN
+F 3 "~" H 3700 5300 50  0001 C CNN
+	1    3700 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 655A34FB
+P 3850 3650
+F 0 "R1" H 3920 3696 50  0000 L CNN
+F 1 "R" H 3920 3605 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3780 3650 50  0001 C CNN
+F 3 "~" H 3850 3650 50  0001 C CNN
+	1    3850 3650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 655A3C33
+P 3150 5000
+F 0 "R3" H 3220 5046 50  0000 L CNN
+F 1 "R" H 3220 4955 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3080 5000 50  0001 C CNN
+F 3 "~" H 3150 5000 50  0001 C CNN
+	1    3150 5000
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 655A4419
+P 4300 3950
+F 0 "R2" H 4370 3996 50  0000 L CNN
+F 1 "R" H 4370 3905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4230 3950 50  0001 C CNN
+F 3 "~" H 4300 3950 50  0001 C CNN
+	1    4300 3950
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 655A4E96
+P 3550 3650
+F 0 "C1" H 3642 3696 50  0000 L CNN
+F 1 "C_Small" H 3642 3605 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 3550 3650 50  0001 C CNN
+F 3 "~" H 3550 3650 50  0001 C CNN
+	1    3550 3650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener D1
+U 1 1 655A59D1
+P 2150 5150
+F 0 "D1" H 2150 5367 50  0000 C CNN
+F 1 "D_Zener" H 2150 5276 50  0000 C CNN
+F 2 "Diode_THT:D_A-405_P10.16mm_Horizontal" H 2150 5150 50  0001 C CNN
+F 3 "~" H 2150 5150 50  0001 C CNN
+	1    2150 5150
+	0    -1   1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J3
+U 1 1 655B6F1A
+P 9550 3200
+F 0 "J3" H 9578 3176 50  0000 L CNN
+F 1 "Conn_Sensor1" H 9578 3085 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 9550 3200 50  0001 C CNN
+F 3 "~" H 9550 3200 50  0001 C CNN
+	1    9550 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J4
+U 1 1 655B8132
+P 9550 3400
+F 0 "J4" H 9578 3376 50  0000 L CNN
+F 1 "Conn_Sensor2" H 9578 3285 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 9550 3400 50  0001 C CNN
+F 3 "~" H 9550 3400 50  0001 C CNN
+	1    9550 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J5
+U 1 1 655B871B
+P 9550 3600
+F 0 "J5" H 9578 3576 50  0000 L CNN
+F 1 "Conn_Sensor3" H 9578 3485 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 9550 3600 50  0001 C CNN
+F 3 "~" H 9550 3600 50  0001 C CNN
+	1    9550 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J6
+U 1 1 655B8BE5
+P 9550 3800
+F 0 "J6" H 9578 3776 50  0000 L CNN
+F 1 "Conn_Sensor4" H 9578 3685 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 9550 3800 50  0001 C CNN
+F 3 "~" H 9550 3800 50  0001 C CNN
+	1    9550 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM358 U2
+U 1 1 6559FA4A
+P 2750 4050
+F 0 "U2" H 2750 4417 50  0000 C CNN
+F 1 "LM358" H 2750 4326 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 2750 4050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 2750 4050 50  0001 C CNN
+	1    2750 4050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 3400 9200 3500
+Wire Wire Line
+	9050 3400 9200 3400
+Wire Wire Line
+	9050 3600 9100 3600
+Wire Wire Line
+	9050 3500 9150 3500
+Wire Wire Line
+	9150 3500 9150 3700
+Wire Wire Line
+	9150 3700 9350 3700
+Wire Wire Line
+	9050 3300 9350 3300
+Wire Wire Line
+	9200 3500 9350 3500
+Wire Wire Line
+	9350 3600 9250 3600
+Wire Wire Line
+	9350 3400 9250 3400
+Wire Wire Line
+	9250 3400 9250 3600
+Connection ~ 9250 3600
+Wire Wire Line
+	9350 3200 9250 3200
+Wire Wire Line
+	9250 3200 9250 3400
+Connection ~ 9250 3400
+Wire Wire Line
+	4150 3950 3850 3950
+Wire Wire Line
+	3850 3800 3850 3950
+Connection ~ 3850 3950
+Wire Wire Line
+	3850 3950 3550 3950
+Wire Wire Line
+	3550 3750 3550 3950
+Connection ~ 3550 3950
+Wire Wire Line
+	3550 3950 3050 3950
+Wire Wire Line
+	3850 3500 3850 3350
+Wire Wire Line
+	3550 3350 3550 3550
+Wire Wire Line
+	2150 5300 2150 5400
+$Comp
+L Connector:Conn_01x04_Female J7
+U 1 1 655DDCBF
+P 7100 3350
+F 0 "J7" H 7128 3326 50  0000 L CNN
+F 1 "Conn_Bluetooth" H 7128 3235 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 7100 3350 50  0001 C CNN
+F 3 "~" H 7100 3350 50  0001 C CNN
+	1    7100 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 3550 6450 3550
+Wire Wire Line
+	6900 3450 6450 3450
+Wire Wire Line
+	6900 3350 6650 3350
+Wire Wire Line
+	6900 3250 6650 3250
+NoConn ~ 6900 3150
+NoConn ~ 6900 3650
+NoConn ~ 6450 3650
+Wire Wire Line
+	5750 3050 5750 2800
+Wire Wire Line
+	5750 2800 6650 2800
+Wire Wire Line
+	6650 2800 6650 3250
+Wire Wire Line
+	6450 4350 7400 4350
+Wire Wire Line
+	7400 4350 7400 3900
+Wire Wire Line
+	7400 3900 8050 3900
+Wire Wire Line
+	6450 4450 7500 4450
+Wire Wire Line
+	7500 4450 7500 4000
+Wire Wire Line
+	7500 4000 8050 4000
+Wire Wire Line
+	8550 2800 6650 2800
+Wire Wire Line
+	8550 2800 8550 3000
+Connection ~ 6650 2800
+Wire Wire Line
+	8050 3500 7900 3500
+Wire Wire Line
+	7900 3500 7900 2950
+Wire Wire Line
+	7900 2950 4850 2950
+Wire Wire Line
+	4850 2950 4850 4150
+Wire Wire Line
+	4850 4150 3400 4150
+Wire Wire Line
+	5450 4050 5050 4050
+Wire Wire Line
+	5050 4050 5050 4700
+Wire Wire Line
+	5050 4700 3150 4700
+Wire Wire Line
+	2150 4700 2150 4050
+Wire Wire Line
+	2150 4050 2450 4050
+$Comp
+L power:GND #PWR0106
+U 1 1 656DA838
+P 2850 4500
+F 0 "#PWR0106" H 2850 4250 50  0001 C CNN
+F 1 "GND" H 2855 4327 50  0000 C CNN
+F 2 "" H 2850 4500 50  0001 C CNN
+F 3 "" H 2850 4500 50  0001 C CNN
+	1    2850 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 656DC9B0
+P 2150 5400
+F 0 "#PWR0107" H 2150 5150 50  0001 C CNN
+F 1 "GND" H 2155 5227 50  0000 C CNN
+F 2 "" H 2150 5400 50  0001 C CNN
+F 3 "" H 2150 5400 50  0001 C CNN
+	1    2150 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 5000 2150 4700
+Connection ~ 2150 4700
+Wire Wire Line
+	3150 5150 3150 5300
+Wire Wire Line
+	3150 5300 3400 5300
+Wire Wire Line
+	3150 4850 3150 4700
+Connection ~ 3150 4700
+Wire Wire Line
+	3150 4700 2150 4700
+Wire Wire Line
+	3400 4150 3400 5300
+Connection ~ 3400 4150
+Wire Wire Line
+	3400 4150 3050 4150
+Connection ~ 3400 5300
+Wire Wire Line
+	3400 5300 3550 5300
+NoConn ~ 3850 5300
+Wire Wire Line
+	4650 2800 4650 3950
+Wire Wire Line
+	4650 3950 4450 3950
+Connection ~ 5750 2800
+NoConn ~ 9050 3700
+NoConn ~ 9050 3800
+NoConn ~ 9050 3900
+NoConn ~ 9050 4000
+NoConn ~ 9050 4100
+NoConn ~ 9050 4200
+NoConn ~ 9050 4300
+NoConn ~ 9050 4400
+NoConn ~ 9050 4500
+NoConn ~ 9050 4600
+NoConn ~ 9050 4700
+NoConn ~ 9050 4800
+NoConn ~ 8050 4100
+NoConn ~ 8050 4200
+NoConn ~ 6450 4750
+NoConn ~ 6450 4650
+NoConn ~ 6450 4550
+NoConn ~ 6450 4250
+NoConn ~ 6450 4150
+NoConn ~ 6450 4050
+NoConn ~ 6450 3950
+NoConn ~ 6450 3750
+NoConn ~ 6450 3850
+NoConn ~ 5450 3450
+NoConn ~ 5450 3550
+NoConn ~ 5450 3850
+NoConn ~ 5450 4150
+NoConn ~ 5450 4250
+NoConn ~ 5450 4350
+NoConn ~ 5450 4450
+NoConn ~ 5450 4550
+NoConn ~ 5450 4650
+NoConn ~ 5450 4750
+NoConn ~ 5850 3050
+NoConn ~ 5850 5050
+Wire Wire Line
+	3550 3350 3700 3350
+$Comp
+L power:GND #PWR0105
+U 1 1 6579D47A
+P 3700 3150
+F 0 "#PWR0105" H 3700 2900 50  0001 C CNN
+F 1 "GND" H 3705 2977 50  0000 C CNN
+F 2 "" H 3700 3150 50  0001 C CNN
+F 3 "" H 3700 3150 50  0001 C CNN
+	1    3700 3150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3700 3150 3700 3350
+Connection ~ 3700 3350
+Wire Wire Line
+	3700 3350 3850 3350
+$Comp
+L Amplifier_Operational:LM358 U2
+U 3 1 655BBF54
+P 2750 4050
+F 0 "U2" H 2708 4096 50  0000 L CNN
+F 1 "LM358" H 2708 4005 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 2750 4050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 2750 4050 50  0001 C CNN
+	3    2750 4050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 4350 2850 4500
+Wire Wire Line
+	6050 2250 6050 2700
+Wire Wire Line
+	2850 3750 2850 2700
+Wire Wire Line
+	2850 2700 6050 2700
+$Comp
+L Device:R R4
+U 1 1 658F9058
+P 6400 2250
+F 0 "R4" V 6607 2250 50  0000 C CNN
+F 1 "R" V 6516 2250 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6330 2250 50  0001 C CNN
+F 3 "~" H 6400 2250 50  0001 C CNN
+	1    6400 2250
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 658F9A6E
+P 6900 2250
+F 0 "D2" H 6893 1995 50  0000 C CNN
+F 1 "LED" H 6893 2086 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 6900 2250 50  0001 C CNN
+F 3 "~" H 6900 2250 50  0001 C CNN
+	1    6900 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 659034B3
+P 7250 2350
+F 0 "#PWR0109" H 7250 2100 50  0001 C CNN
+F 1 "GND" H 7255 2177 50  0000 C CNN
+F 2 "" H 7250 2350 50  0001 C CNN
+F 3 "" H 7250 2350 50  0001 C CNN
+	1    7250 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 2250 6050 2250
+Wire Wire Line
+	6750 2250 6550 2250
+Wire Wire Line
+	7050 2250 7250 2250
+Wire Wire Line
+	7250 2250 7250 2350
+$Comp
+L power:GND #PWR0102
+U 1 1 659154E8
+P 8550 5250
+F 0 "#PWR0102" H 8550 5000 50  0001 C CNN
+F 1 "GND" H 8555 5077 50  0000 C CNN
+F 2 "" H 8550 5250 50  0001 C CNN
+F 3 "" H 8550 5250 50  0001 C CNN
+	1    8550 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 5100 8550 5250
+Wire Wire Line
+	9250 3600 9250 3800
+Wire Wire Line
+	9350 3800 9250 3800
+Wire Wire Line
+	9100 3600 9100 3900
+Wire Wire Line
+	9100 3900 9350 3900
+$Comp
+L power:GND #PWR0110
+U 1 1 656438AC
+P 6650 3350
+F 0 "#PWR0110" H 6650 3100 50  0001 C CNN
+F 1 "GND" H 6655 3177 50  0000 C CNN
+F 2 "" H 6650 3350 50  0001 C CNN
+F 3 "" H 6650 3350 50  0001 C CNN
+	1    6650 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 6564FEBD
+P 9250 4050
+F 0 "#PWR0103" H 9250 3800 50  0001 C CNN
+F 1 "GND" H 9255 3877 50  0000 C CNN
+F 2 "" H 9250 4050 50  0001 C CNN
+F 3 "" H 9250 4050 50  0001 C CNN
+	1    9250 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 4050 9250 3800
+Connection ~ 9250 3800
+$Comp
+L power:GND #PWR0101
+U 1 1 65657288
+P 6200 5100
+F 0 "#PWR0101" H 6200 4850 50  0001 C CNN
+F 1 "GND" H 6205 4927 50  0000 C CNN
+F 2 "" H 6200 5100 50  0001 C CNN
+F 3 "" H 6200 5100 50  0001 C CNN
+	1    6200 5100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6200 5100 5950 5100
+Wire Wire Line
+	5950 5100 5950 5050
+Wire Wire Line
+	6050 2700 6050 3050
+Connection ~ 6050 2700
+$Comp
+L Connector:Barrel_Jack_Switch J1
+U 1 1 6567789F
+P 3850 2250
+F 0 "J1" H 3907 2567 50  0000 C CNN
+F 1 "Barrel_Jack_Switch" H 3907 2476 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 3900 2210 50  0001 C CNN
+F 3 "~" H 3900 2210 50  0001 C CNN
+	1    3850 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 65679925
+P 4300 2450
+F 0 "#PWR0104" H 4300 2200 50  0001 C CNN
+F 1 "GND" H 4305 2277 50  0000 C CNN
+F 2 "" H 4300 2450 50  0001 C CNN
+F 3 "" H 4300 2450 50  0001 C CNN
+	1    4300 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 2350 4300 2350
+Wire Wire Line
+	4300 2350 4300 2450
+NoConn ~ 4150 2250
+$Comp
+L Connector:Conn_01x03_Female J2
+U 1 1 656A755E
+P 5100 1800
+F 0 "J2" V 5038 1612 50  0000 R CNN
+F 1 "Conn_Interruptor" V 4947 1612 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 5100 1800 50  0001 C CNN
+F 3 "~" H 5100 1800 50  0001 C CNN
+	1    5100 1800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5200 2000 5200 2250
+Wire Wire Line
+	5200 2250 6050 2250
+Connection ~ 6050 2250
+Wire Wire Line
+	4150 2150 5100 2150
+Wire Wire Line
+	5100 2150 5100 2000
+NoConn ~ 5000 2000
+Wire Wire Line
+	5750 2800 4650 2800
+Wire Wire Line
+	3700 5450 3700 5700
+Wire Wire Line
+	4650 5700 4650 3950
+Wire Wire Line
+	3700 5700 4650 5700
+Connection ~ 4650 3950
+$Comp
+L power:GND #PWR0108
+U 1 1 656194E6
+P 7950 4700
+F 0 "#PWR0108" H 7950 4450 50  0001 C CNN
+F 1 "GND" H 7955 4527 50  0000 C CNN
+F 2 "" H 7950 4700 50  0001 C CNN
+F 3 "" H 7950 4700 50  0001 C CNN
+	1    7950 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 4700 7950 4600
+Wire Wire Line
+	7950 4600 8050 4600
+$EndSCHEMATC
